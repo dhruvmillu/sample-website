@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.background{
   display: flex;
   flex-direction: column;
+  background-color: black;
+  height: 100vh;
+}
+
+.header{
+  width:100%;
+  background-image: linear-gradient(black,transparent);
+  color:rgb(240,104,4);
+  font-size: 25px;
+  font-weight: 500;
+  display:flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10000;
+}
+
+.symbol{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:20px
 }
 
-.App-link {
-  color: #61dafb;
+.header >div> ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  list-style-type: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:link {
+  text-align: center;
+  padding: 220px;
+  top:0;
+  position: relative;
+  transition: 0.5s;
+  color:rgb(240,104,4);
+  text-decoration: none;
+
+}
+
+a:visited {
+  padding: 120px;
+  top:0;
+  position: relative;
+  transition: 0.5s;
+  color:rgb(240,104,4);
+  text-decoration: none;
+
+}
+
+ul li:hover{
+  letter-spacing: 5px;
+}
+
+main {
+  padding:40px;
+  height: 100%;
+}
+
+.over{
+  background-color: rgba(0, 0, 0, 0.852);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: 10;
+  
+}
+.over2{
+  background-color: rgba(0, 0, 0, 0.398);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: 9;
+  
+}
+
+.infoHolder {
+  
+  position: relative;
+  top:150px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading1{
+  color: rgb(240,104,4);
+  font-size: 150px;
+  width: 700px;
+  margin:0px 0px 0px 0px;
+  word-wrap: normal;
+  line-height: 140px;
+}
+
+.heading2{
+  color: rgb(240,104,4);
+  font-size: 100px;
+  width: 700px;
+  margin:0px 0px 0px 0px;
+  word-wrap: normal;
+  line-height: 140px;
+}
+
+.info{
+  
+  color: rgb(231, 231, 231);
+  margin:30px 0px 0px 00px;
+  width: 700px;
+  font-size: 20px;
+}
+
+.hw{
+  font-size: 50px;
+  font-weight: 500;
+  color:rgb(240,104,4);
+}
+
+.bw{
+  font-size: 30px;
+  font-weight: 500;
+  color:rgb(255, 255, 255);
+  margin-bottom: 50px;;
 }
